@@ -8,9 +8,9 @@ ASM32_FLAGS=
 ASM64=nasm -f elf64
 ASM64_FLAGS=
 ASM_FLAGS=-g -F stabs
-LD32=ld --oformat elf32-i386
+LD32=ld -m elf_i386
 LD32_FLAGS=
-LD64=ld --oformat elf64-x86-64
+LD64=ld -m elf_x86_64
 LD64_FLAGS=
 LD_FLAGS=
 
