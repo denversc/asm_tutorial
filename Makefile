@@ -15,7 +15,8 @@ LD64_FLAGS=
 LD_FLAGS=
 
 all: \
-    HelloWorld.32.exe
+    HelloWorld.32.exe \
+    HelloWorld.64.exe
 
 clean:
 	rm -fv *.o *.exe
@@ -34,3 +35,5 @@ clean:
 
 HelloWorld.32.o: HelloWorld.32.asm
 HelloWorld.32.exe: HelloWorld.32.o
+HelloWorld.64.o: HelloWorld.64.asm
+HelloWorld.64.exe: HelloWorld.64.o
